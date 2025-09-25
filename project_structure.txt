@@ -1,0 +1,25 @@
+# DistPPM项目完整结构
+distppm/
+├── main.py                  # 系统入口点
+├── .env                     # 环境变量配置
+├── requirements.txt         # 项目依赖
+├── build_docker_images.sh   # 构建Docker镜像脚本
+├── distppm.sh            # 启动系统脚本
+├── streaming_event_processor.py  # 流式事件处理器
+├── coordination_layer/
+│   ├── prediction_coordinator.py  # 预测协调器
+│   ├── prediction_coordinator_client.py  # 协调器客户端
+│   ├── Dockerfile           # 协调层Docker配置
+│   └── __init__.py
+├── federated_layer/
+│   ├── federated_coordinator.py  # 联邦学习协调器
+│   ├── federated_client.py       # 联邦学习客户端
+│   ├── Dockerfile           # 联邦层Docker配置
+│   └── __init__.py
+├── node_layer/
+│   ├── predictive_activity_node.py  # 预测性活动节点
+│   ├── local_prediction_engine.py   # 本地预测引擎
+│   ├── Dockerfile           # 节点层Docker配置
+│   └── __init__.py
+└── outputs/                 # 输出目录(自动创建)
+    └── predictions/         # 预测结果日志

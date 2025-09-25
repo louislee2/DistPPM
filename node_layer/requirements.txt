@@ -1,0 +1,15 @@
+# node_layer/requirements.txt
+# 核心依赖（节点层需要的基础库）
+pm4py==2.7.11
+python-dotenv==1.0.0
+requests==2.31.0
+flask==2.3.3
+numpy==1.26.0
+pandas==2.1.1
+
+# 机器学习依赖（节点层本地预测需要）
+scikit-learn==1.3.0
+transformers==4.34.0  # 若使用Transformer模型
+
+# 联邦学习依赖（节点作为联邦客户端需要）
+flwr==1.5.0
