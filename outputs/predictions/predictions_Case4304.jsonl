@@ -1,2 +1,0 @@
-{"timestamp": 1758806431.574764, "case_id": "Case4304", "prediction": {"confidence": 0.0, "model_version": 0, "next_activity": "unknown", "node_id": 3, "remaining_time": null}, "event_index": 0}
-{"timestamp": 1758806442.8807678, "case_id": "Case4304", "prediction": {"confidence": 0.0, "model_version": 0, "next_activity": "unknown", "node_id": 3, "remaining_time": null}, "event_index": 1}
